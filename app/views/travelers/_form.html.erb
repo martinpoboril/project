@@ -1,0 +1,45 @@
+<%= form_for(@traveler) do |f| %>
+  <% if @traveler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@traveler.errors.count, "error") %> prohibited this traveler from being saved:</h2>
+
+      <ul>
+      <% @traveler.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :what_place_did_you_visit %><br />
+    <%= f.text_field :what_place_did_you_visit %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_your_trip %><br />
+    <%= f.date_select :date_of_your_trip %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_people_traveling_with_you %><br />
+    <%= f.number_field :number_of_people_traveling_with_you %>
+  </div>
+  <div class="field">
+    <%= f.label :what_transport_did_you_use %><br />
+    <%= f.text_field :what_transport_did_you_use %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

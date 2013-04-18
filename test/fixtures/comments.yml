@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  your_comment: MyString
+  traveler_id: 1
+
+two:
+  your_comment: MyString
+  traveler_id: 1

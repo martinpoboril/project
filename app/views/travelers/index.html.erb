@@ -1,0 +1,35 @@
+<h1>Listing travelers</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Email</th>
+    <th>What place did you visit</th>
+    <th>Date of your trip</th>
+    <th>Number of people traveling with you</th>
+    <th>What transport did you use</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @travelers.each do |traveler| %>
+  <tr>
+    <td><%= traveler.first_name %></td>
+    <td><%= traveler.last_name %></td>
+    <td><%= traveler.email %></td>
+    <td><%= traveler.what_place_did_you_visit %></td>
+    <td><%= traveler.date_of_your_trip %></td>
+    <td><%= traveler.number_of_people_traveling_with_you %></td>
+    <td><%= traveler.what_transport_did_you_use %></td>
+    <td><%= link_to 'Show', traveler %></td>
+    <td><%= link_to 'Edit', edit_traveler_path(traveler) %></td>
+    <td><%= link_to 'Destroy', traveler, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Traveler', new_traveler_path %>

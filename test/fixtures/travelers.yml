@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  what_place_did_you_visit: MyString
+  date_of_your_trip: 2013-04-17
+  number_of_people_traveling_with_you: 1
+  what_transport_did_you_use: MyString
+
+two:
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  what_place_did_you_visit: MyString
+  date_of_your_trip: 2013-04-17
+  number_of_people_traveling_with_you: 1
+  what_transport_did_you_use: MyString
